@@ -10,6 +10,25 @@ class Dashboard extends StatefulWidget {
 class _DashboardState extends State<Dashboard> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Center(child: Text('Hello World')));
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Resmo'),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('Hello World'),
+            ElevatedButton(
+              onPressed: () {},
+              child: Text(
+                'Button',
+                style: Theme.of(context).textTheme.titleLarge,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
