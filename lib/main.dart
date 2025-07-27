@@ -16,7 +16,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.blueAccent,
-          brightness: Brightness.dark,
+          brightness: Brightness.light,
+          // brightness: Brightness.dark,
         ),
         appBarTheme: AppBarTheme(
           backgroundColor: Colors.blue
